@@ -24,4 +24,22 @@ export class MenuComponent implements OnInit {
     document.getElementById("myNav").style.width = "0%";
   }
 
+  home(){
+    document.getElementById("app-home").style.display="block"
+    document.getElementById("app-asl").style.display="none"
+  }
+
+  ASL(){
+    document.getElementById("app-home").style.display="none"
+    document.getElementById("app-asl").style.display="block"
+  }
+
+  about(){
+
+  }
+
+  settings(){
+    
+  }
+
 }

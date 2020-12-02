@@ -14,11 +14,12 @@ export class ASLComponent implements OnInit {
   }
 
   translate() {
-    alert('worked')
+    
     const headers = new HttpHeaders();
     this.http.get('http://localhost:3000/', {headers: headers}).subscribe(
       (res: string) => {
-        console.log(res);
+        let tranlatedSign = JSON.parse(res)
+        document.getElementById("translation").innerHTML = tranlatedSign
       }
     )
     

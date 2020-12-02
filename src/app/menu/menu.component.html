@@ -6,10 +6,10 @@
   
     <!-- Overlay content -->
     <div class="overlay-content">
-      <button >Home</button>
-      <button href="#">ASL</button>
-      <button href="#">Settings</button>
-      <button href="#">About</button>
+      <button class = "overlay-button" (click)="home()">Home</button>
+      <button class = "overlay-button" (click)="ASL()">ASL</button>
+      <button class = "overlay-button" (click)="settings()">Settings</button>
+      <button class = "overlay-button" (click)="about()">About</button>
     </div>
   
   </div>
@@ -20,7 +20,12 @@
   </div>
 
   <div id = "app-body">
-    <app-home></app-home>
-    <app-asl></app-asl>
+    <div id="app-home">
+      <app-home></app-home>
+    </div>
+    <div id="app-asl">
+      <app-asl></app-asl>
+    </div>
+    
   </div>
   
