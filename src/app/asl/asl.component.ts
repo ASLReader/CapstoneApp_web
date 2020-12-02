@@ -18,8 +18,14 @@ export class ASLComponent implements OnInit {
     const headers = new HttpHeaders();
     this.http.get('http://localhost:3000/', {headers: headers}).subscribe(
       (res: string) => {
-        let tranlatedSign = JSON.parse(res)
-        document.getElementById("translation").innerHTML = tranlatedSign
+        let signs = res["signs"][0]
+        let sign;
+        let history = ""
+        for (sign of signs) {
+          document.getElementById("translation").innerHTML = sign["sign"]
+          history = history + ", " + sign["sign"]
+        }
+        document.getElementById("history").innerHTML = history
       }
     )
     
