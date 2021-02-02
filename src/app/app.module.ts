@@ -8,14 +8,16 @@ import { environment } from '../environments/environment';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ASLComponent } from './asl/asl.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { SettingsComponent } from './settings/settings.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HomeComponent,
-    ASLComponent
+    ASLComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

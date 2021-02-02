@@ -102,3 +102,11 @@
 #app-asl {
   display: none;
 }
+
+#app-settings {
+  display: block;
+}
+
+#app-home {
+  display: none;
+}
