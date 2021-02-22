@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeImage() {
+    (<HTMLImageElement>document.getElementById("sign-img")).src = "assets/ASL/fine/frame54.jpg"
+  }
+
 }

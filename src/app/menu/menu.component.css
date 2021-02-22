@@ -104,9 +104,9 @@
 }
 
 #app-settings {
-  display: block;
+  display: none;
 }
 
 #app-home {
-  display: none;
+  display: block;
 }
