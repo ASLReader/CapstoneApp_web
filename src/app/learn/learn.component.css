@@ -28,9 +28,10 @@
   align-self: right;
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: rgb(0, 102, 255);
   border: none;
-  color: #ffffff;
+  color: white;
+  font-family: verdana;
   text-align: center;
   font-size: 20px;
   padding: 10px;

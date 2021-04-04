@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   /* Open when someone clicks on the span element */
   openNav() {
-    document.getElementById("myNav").style.width = "40%";
+    document.getElementById("myNav").style.width = "100%";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
