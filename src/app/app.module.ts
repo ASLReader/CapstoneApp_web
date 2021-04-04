@@ -10,7 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { ASLComponent } from './asl/asl.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SettingsComponent } from './settings/settings.component';
-import { LearnComponent } from './learn/learn.component'
+import { AboutComponent } from './about/about.component';
+import { LearnComponent } from './learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LearnComponent } from './learn/learn.component'
     HomeComponent,
     ASLComponent,
     SettingsComponent,
+    AboutComponent,
     LearnComponent
   ],
   imports: [

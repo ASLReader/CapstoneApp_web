@@ -29,6 +29,7 @@ export class MenuComponent implements OnInit {
     document.getElementById("app-learn").style.display="none"
     document.getElementById("app-asl").style.display="none"
     document.getElementById("app-settings").style.display="none"
+    document.getElementById("app-about").style.display="none"
   }
 
   ASL(){
@@ -36,6 +37,7 @@ export class MenuComponent implements OnInit {
     document.getElementById("app-learn").style.display="none"
     document.getElementById("app-asl").style.display="block"
     document.getElementById("app-settings").style.display="none"
+    document.getElementById("app-about").style.display="none"
   }
 
   settings(){
@@ -43,6 +45,7 @@ export class MenuComponent implements OnInit {
     document.getElementById("app-learn").style.display="none"
     document.getElementById("app-asl").style.display="none"
     document.getElementById("app-settings").style.display="block"
+    document.getElementById("app-about").style.display="none"
   }
 
 
@@ -51,10 +54,15 @@ export class MenuComponent implements OnInit {
     document.getElementById("app-learn").style.display="block"
     document.getElementById("app-asl").style.display="none"
     document.getElementById("app-settings").style.display="none"
+    document.getElementById("app-about").style.display="none"
   }
 
   about(){
-    
+    document.getElementById("app-home").style.display="none"
+    document.getElementById("app-learn").style.display="none"
+    document.getElementById("app-asl").style.display="none"
+    document.getElementById("app-settings").style.display="none"
+    document.getElementById("app-about").style.display="block"
   }
 
 }
