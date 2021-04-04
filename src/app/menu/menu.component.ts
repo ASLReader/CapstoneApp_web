@@ -26,22 +26,32 @@ export class MenuComponent implements OnInit {
 
   home(){
     document.getElementById("app-home").style.display="block"
+    document.getElementById("app-learn").style.display="none"
     document.getElementById("app-asl").style.display="none"
     document.getElementById("app-settings").style.display="none"
   }
 
   ASL(){
     document.getElementById("app-home").style.display="none"
+    document.getElementById("app-learn").style.display="none"
     document.getElementById("app-asl").style.display="block"
     document.getElementById("app-settings").style.display="none"
   }
 
   settings(){
     document.getElementById("app-home").style.display="none"
+    document.getElementById("app-learn").style.display="none"
     document.getElementById("app-asl").style.display="none"
     document.getElementById("app-settings").style.display="block"
   }
 
+
+  learn(){
+    document.getElementById("app-home").style.display="none"
+    document.getElementById("app-learn").style.display="block"
+    document.getElementById("app-asl").style.display="none"
+    document.getElementById("app-settings").style.display="none"
+  }
 
   about(){
     

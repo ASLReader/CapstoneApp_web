@@ -9,7 +9,8 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ASLComponent } from './asl/asl.component';
 import {HttpClientModule} from '@angular/common/http';
-import { SettingsComponent } from './settings/settings.component'
+import { SettingsComponent } from './settings/settings.component';
+import { LearnComponent } from './learn/learn.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SettingsComponent } from './settings/settings.component'
     MenuComponent,
     HomeComponent,
     ASLComponent,
-    SettingsComponent
+    SettingsComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,

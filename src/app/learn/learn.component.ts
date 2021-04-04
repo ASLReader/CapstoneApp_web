@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 var signLib=["fine", "fingerspell", "food", "for", "friend", "get", "girl", "give"]
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-learn',
+  templateUrl: './learn.component.html',
+  styleUrls: ['./learn.component.css']
 })
-export class HomeComponent implements OnInit {
+export class LearnComponent implements OnInit {
 
   constructor() { }
 
@@ -19,8 +19,7 @@ export class HomeComponent implements OnInit {
     var signName=signLib[randSignNum];
     var imagePath=`assets/ASL/${signName}/frame.jpg`;
     console.log(imagePath);
-    (<HTMLImageElement>document.getElementById("sign-img")).src = imagePath;
-    (<HTMLImageElement>document.getElementById("sign-name")).innerHTML = signName;
+    (<HTMLImageElement>document.getElementById("signImg")).src = imagePath;
+    (<HTMLImageElement>document.getElementById("signName")).innerHTML = signName;
   }
-
 }

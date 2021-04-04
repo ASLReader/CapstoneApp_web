@@ -107,6 +107,10 @@
   display: none;
 }
 
+#app-learn {
+  display: none;
+}
+
 #app-home {
   display: block;
 }
