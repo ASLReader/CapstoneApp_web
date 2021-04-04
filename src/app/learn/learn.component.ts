@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-var signLib=["fine", "fingerspell", "food", "for", "friend", "get", "girl", "give"]
+var signLib=["again", "also", "ask", "because", "boy", "but", "can", "come", "deaf", "different",
+"done", "drink", "drive", "eat", "email_address", "family", "father", "few", "good", "have",
+"he", "hearing", "hello", "help", "home", "how", "if", "internet", "know", "remember",
+"same", "say", "school", "see", "she", "should", "signing", "slow", "some", "sorry",
+"take", "tell", "texting", "that", "their", "they", "think", "time", "tired", "toilet",
+"understand", "use", "wait", "water", "what", "when", "where", "which", "who", "why",
+"with", "woman", "work", "write", "yes", "you", "your", "fine", "fingerspell", "food", 
+"for", "friend", "get", "girl", "give"]
 
 @Component({
   selector: 'app-learn',
