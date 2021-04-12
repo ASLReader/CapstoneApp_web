@@ -16,7 +16,7 @@ export class ASLComponent implements OnInit {
   translate() {
     
     const headers = new HttpHeaders();
-    this.http.get('http://localhost:3000/', {headers: headers}).subscribe(
+    this.http.get('http://192.168.1.10:5000/', {headers: headers}).subscribe(
       (res: string) => {
         let signs = res["signs"][0]
         let sign;
