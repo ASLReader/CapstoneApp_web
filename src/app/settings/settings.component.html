@@ -1,8 +1,9 @@
 <p id="title">settings</p>
 <ul>
-    <li><p>Reset device cache</p></li>
-    <li><p>Turn on histroy</p></li>
-    <li><p>Restart device</p></li>
-    <li><p>Reset Application</p></li>
-    <li><p>Clear device data</p></li>
+    <li>
+      <div class="slidecontainer">
+        <label for="accuracyRange">Accuracy</label>
+        <input (change)="accuracyHandler()" type="range" min="1" max="100" value="50" class="slider" id="accuracyRange">
+      </div>
+    </li>
   </ul>

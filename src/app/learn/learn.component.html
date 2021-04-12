@@ -3,3 +3,11 @@
     <img class = "card-img" id="signImg" src="assets/ASL/fine/frame.jpg">
     <button (load)="changeImage()" (click)="changeImage()" id="card-button" class='card-button'>Next</button>
 </div>
+
+<div id="signCards">
+    <div class="more-card" *ngFor="let sign of signLib">
+        <h1 class = "card-header" id="signName">{{sign}}</h1>
+        <img class = "more-card-img" id="signImg" src="assets/ASL/{{sign}}/frame.jpg">
+    </div>
+
+</div>

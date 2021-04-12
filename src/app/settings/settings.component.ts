@@ -1,3 +1,4 @@
+import { htmlAstToRender3Ast } from '@angular/compiler/src/render3/r3_template_transform';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,6 +11,10 @@ export class SettingsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  accuracyHandler() {
+    document.getElementById("accuracyRange");
   }
 
 }
