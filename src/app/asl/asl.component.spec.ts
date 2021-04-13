@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ASLComponent } from './asl.component';
 
 describe('ASLComponent', () => {
@@ -8,6 +8,7 @@ describe('ASLComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ HttpClientTestingModule ],
       declarations: [ ASLComponent ]
     })
     .compileComponents();
@@ -19,7 +20,7 @@ describe('ASLComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should Display Translation Page', () => {
+    expect(component.testComp).toBe("ASL");
   });
 });

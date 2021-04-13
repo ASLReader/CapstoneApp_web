@@ -10,6 +10,7 @@ export class ASLComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
+  testComp = "ASL";
   ngOnInit(): void {
   }
 

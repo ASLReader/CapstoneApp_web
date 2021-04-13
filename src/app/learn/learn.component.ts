@@ -19,6 +19,7 @@ export class LearnComponent implements OnInit {
 
   constructor() { }
 
+  testComp = "Learn";
   ngOnInit(): void {
 
   }

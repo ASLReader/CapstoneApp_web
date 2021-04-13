@@ -19,7 +19,16 @@ describe('MenuComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create Navigation Flow Menu', () => {
+    expect(component.testComp).toBe("Menu");
+  });
+  
+  it('should allow to go to homepage (hence, allow navigation)', async() => {
+    spyOn(component, 'home');
+    let button = fixture.debugElement.nativeElement.querySelector('button');
+    button.click();
+    fixture.whenStable().then(() => {
+      expect(component.home).toHaveBeenCalled();
+    })
   });
 });

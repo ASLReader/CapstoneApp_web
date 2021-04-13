@@ -19,7 +19,7 @@ describe('SettingsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should allow access to Settings (via settings page)', () => {
+    expect(component.testComp).toBe("Settings");
   });
 });

@@ -9,6 +9,7 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
+  testComp = "Menu";
   ngOnInit(): void {
     
   }
